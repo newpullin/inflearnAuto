@@ -4,7 +4,7 @@ import pyautogui
 MONITOR_WIDTH = 1920
 MONITOR_HEIGHT = 1080
 
-X_POS = 1680
+X_POS = 1080
 Y_POS = 1034
 WIDTH = 220
 HEIGHT = 4
@@ -20,6 +20,7 @@ while True:
                     all_white = False
                     break
             if not all_white:
+                print(f"{time.time()}")
                 break
 
         # 만약에
