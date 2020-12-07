@@ -28,10 +28,10 @@ while True:
             break
 
     # 다음 강의를 재생한다.
-    time.sleep(1)
-    # 전체 화면을 푼다.
-    pyautogui.hotkey('esc')
-    time.sleep(1)
+    time.sleep(2)
+    # 전체 화면을 푼다. 아무곳이나 클릭하면 처음부터 재생되어 버림 임시적으로 전체화면 버튼 좌표를 입력
+    pyautogui.click(1829, 1057)
+    time.sleep(2)
     # 다음 강의 버튼을 누른다.
     next_lecture_button = pyautogui.locateCenterOnScreen("./img/next_lecture_button.PNG")
 
@@ -46,7 +46,6 @@ while True:
     # 일단 스킵
 
     full_screen_button = pyautogui.locateCenterOnScreen("./img/full_screen_button.PNG")
-
     pyautogui.click(full_screen_button)
     time.sleep(1)
 
