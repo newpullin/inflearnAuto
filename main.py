@@ -6,7 +6,7 @@ MONITOR_HEIGHT = 1080
 
 X_POS = 1080
 Y_POS = 1034
-WIDTH = 220
+WIDTH = 820
 HEIGHT = 4
 
 while True:
@@ -27,7 +27,6 @@ while True:
         if all_white:
             print("모두 하얀색")
             break
-
     # 다음 강의를 재생한다.
     time.sleep(2)
     # 전체 화면을 푼다. 아무곳이나 클릭하면 처음부터 재생되어 버림 임시적으로 전체화면 버튼 좌표를 입력
