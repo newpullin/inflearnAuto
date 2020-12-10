@@ -30,21 +30,26 @@ while True:
     # 다음 강의를 재생한다.
     time.sleep(2)
     # 전체 화면을 푼다. 아무곳이나 클릭하면 처음부터 재생되어 버림 임시적으로 전체화면 버튼 좌표를 입력
+    print("전체화면 풀기")
     pyautogui.click(1829, 1057)
     time.sleep(2)
     # 다음 강의 버튼을 누른다.
-    next_lecture_button = pyautogui.locateCenterOnScreen("./img/next_lecture_button.PNG")
+    # next_lecture_button = pyautogui.locateCenterOnScreen("./img/next_lecture_button.PNG")
+    #
+    # if next_lecture_button is None:
+    #     # 2차 대책 강구 but 지금은 시간이 없음
+    #     break
 
-    if next_lecture_button is None:
-        # 2차 대책 강구 but 지금은 시간이 없음
-        break
-
-    pyautogui.click(next_lecture_button)
+    print("다음 강의 재생")
+    #pyautogui.click(next_lecture_button)
+    # 왜 인식을 못 하는겨
+    pyautogui.click(785, 563)
     time.sleep(2)
 
     # 강의자료 인지 확인한다.
     # 일단 스킵
 
+    print("전체 화면")
     full_screen_button = pyautogui.locateCenterOnScreen("./img/full_screen_button.PNG")
     pyautogui.click(full_screen_button)
     time.sleep(1)
