@@ -50,8 +50,9 @@ while True:
     # 일단 스킵
 
     print("전체 화면")
-    full_screen_button = pyautogui.locateCenterOnScreen("./img/full_screen_button.PNG")
-    pyautogui.click(full_screen_button)
+    # full_screen_button = pyautogui.locateCenterOnScreen("./img/full_screen_button.PNG")
+    # 노트북이랑 컴퓨터랑 이미지 해상도가 달라서 그런가 이미지 인식이 안됨
+    pyautogui.click(1282, 908)
     time.sleep(1)
 
 
